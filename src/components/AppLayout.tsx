@@ -16,7 +16,7 @@
 
 // src/components/ui/AppLayout.tsx (or wherever your AppLayout is)
 import AppSidebar from "./AppSidebar"
-import { SidebarProvider } from "./sidebar"
+import { SidebarProvider } from "./ui/sidebar"
 import { Outlet } from "react-router-dom"
 
 export default function AppLayout() {

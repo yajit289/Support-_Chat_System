@@ -1,4 +1,4 @@
-import { Sidebar, SidebarHeader, SidebarContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "../ui/sidebar"
+import { Sidebar, SidebarHeader, SidebarContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "./ui/sidebar"
 import { BotMessageSquare, House, PlusCircle, Rocket } from "lucide-react"
 import { NavLink } from "react-router-dom"
 
@@ -15,7 +15,7 @@ export default function AppSidebar() {
 
     return (
         <>
-            <Sidebar className="bg-[#181818]">
+            <Sidebar>
                 <SidebarHeader className=" h-16 flex-row justify-evenly  mt-5">
                     <div className="text-2xl font-semibold items-center">
                         Support Chatbot

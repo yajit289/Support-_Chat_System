@@ -1,10 +1,10 @@
-import DashBoard from './pages/DashBoard'
+import DashBoard from './pages/DashBoardPage'
 import CreateBot from './pages/CreateBot'
 import Traning from './pages/Traning'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
-import AppLayout from './components/ui/AppLayout'
+import AppLayout from './components/AppLayout'
 import './App.css'
 
 
