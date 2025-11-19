@@ -9,10 +9,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select"
+import { useNavigate } from "react-router-dom"
+
+import { Button } from "./ui/button"
+
 export default function ChatBotCard() {
+   const navigate= useNavigate()
   return (
     <>
-      <Card className="w-200 h-96 bg-[#181818] text-white border border-[#2a2a2a] hover:bg-[#202020] transition">
+      <Card className="w-200 h-96 bg-[#181818] text-white border border-[#2a2a2a] ">
         <CardHeader className="flex items-center  gap-3 text-2xl font-bold">
           <Plus className="w-7 h-6 " strokeWidth={3} />
           <span>Create New Chat Bot</span>
@@ -73,7 +78,11 @@ export default function ChatBotCard() {
               </SelectContent>
             </Select>
           </div>
-
+          <div className="col-span-2 flex justify-center mt-4">
+            <Button className="flex justify-center bg-[#4f46e5] hover:bg-[#4338ca] text-white font-semibold" onClick={()=> navigate("/list")}>
+              Create Chatbot
+            </Button>
+          </div>
         </CardContent>
       </Card>
 

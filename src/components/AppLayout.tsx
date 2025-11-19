@@ -22,7 +22,7 @@ import { Outlet } from "react-router-dom"
 export default function AppLayout() {
   return (
     <SidebarProvider>
-      <div className="flex h-dvh w-dvw overflow-hidden">
+      <div className="flex h-dvh w-dvw overflow-hidden bg-[#202127]">
         <AppSidebar />
         <main className="flex-1 min-w-0 overflow-auto p-6">
           <Outlet />

@@ -1,5 +1,5 @@
 import { Sidebar, SidebarHeader, SidebarContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "./ui/sidebar"
-import { BotMessageSquare, House, PlusCircle, Rocket } from "lucide-react"
+import { BotMessageSquare, House, PlusCircle, Rocket,List } from "lucide-react"
 import { NavLink } from "react-router-dom"
 
 
@@ -7,8 +7,11 @@ export default function AppSidebar() {
 
     const menuItems = [
         { name: "DashBoard", icon: House, path: "/" },
-        { name: "Create New ChatBot", icon: PlusCircle, path: "/create"},
-        { name: "Train Chat Bot", icon: Rocket, path: "/train"},
+        { name: "New Chatbot", icon: PlusCircle, path: "/create"},
+        { name: "Train Chatbot", icon: Rocket, path: "/train"},
+        { name: "Chatbot List", icon: List , path: "/list"},
+
+
     ]
 
 
@@ -20,7 +23,7 @@ export default function AppSidebar() {
                     <div className="text-2xl font-semibold items-center">
                         Support Chatbot
                     </div>
-                    <div className="flex items-center bg-[#4f46e5] justify-center w-9 h-9 rounded-lg cursor-pointer transition-colors">
+                    <div className="flex items-center bg-[#181818] justify-center w-9 h-9 rounded-lg cursor-pointer transition-colors">
                         <BotMessageSquare className="w-6 h-6 text-white text-muted-foreground cursor-pointer hover:text-foreground transition" />
                     </div>
 
